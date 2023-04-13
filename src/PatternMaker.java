@@ -11,6 +11,9 @@ public class PatternMaker {
         pattern2();
         pattern3();
         pattern5();
+        pattern6();
+        pattern7();
+        pattern8();
     }
 
     public void pattern1() {
@@ -28,18 +31,50 @@ public class PatternMaker {
     }
 
     public void pattern3() {
-        for (int w = 21; w > 0; w=w-4) {
+        for (int w = 21; w > 0; w = w - 4) {
             System.out.print(w + "\t");
             //print only makes everything on one line not separate in print1n
         }
     }
+
     public void pattern5() {
         for (int z = 1; z < 5; z++) {
             System.out.println();
             for (int c = 1; c < 5; c++) {
                 System.out.print(c + "\t");
             }
+        }
+    }
+
+    public void pattern6() {
+        System.out.println();
+        for (int p = 0; p < 5; p++) {
+            for (int z = 0; z < p; z++) {
+                System.out.print(" ");
+            }
+            System.out.println(p + 1);
+        }
+    }
+
+    public void pattern7() {
+        for (int z = 1; z < 6; z++) {
+            System.out.println();
+            for (int c = 1; c < 7-z; c++) {
+                System.out.print(z + "\t");
             }
         }
     }
+    public void pattern8() {
+        for (int z = 1; z < 6; z++) {
+            System.out.println();
+            for (int c = 1; c < z; c++) {
+                System.out.print(" ");
+            }
+            for (int c = 1; c < 7 - z; c++) {
+                System.out.print("*");
+            }
+        }
+    }
+}
+
 
